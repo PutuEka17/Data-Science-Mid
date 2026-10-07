@@ -1,0 +1,16 @@
+services:
+  scheduler:
+    volumes:
+      - ..:/opt/airflow/project
+
+  dag-processor:
+    volumes:
+      - ..:/opt/airflow/project
+
+  api-server:
+    volumes:
+      - ..:/opt/airflow/project
+
+  triggerer:
+    volumes:
+      - ..:/opt/airflow/project
